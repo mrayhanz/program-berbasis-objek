@@ -1,4 +1,4 @@
-public class Barrier {
+public class Barrier extends Destroyable {
     private int strength;
 
     public Barrier(int strength) {
@@ -13,6 +13,7 @@ public class Barrier {
         return strength;
     }
 
+    @Override
     public void destroyed() {
         strength -= 9;
         if (strength < 0) strength = 0;

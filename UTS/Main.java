@@ -22,9 +22,7 @@ public class Main {
             System.out.println(b.getBarrierInfo());
             System.out.println();
 
-            if (wz.health == 0 && jz.health == 0 && b.getStrength() == 0) {
-                System.out.println("Semua musuh sudah kalah!");
-                System.out.println();
+            if (wz.health <= 0 || jz.health <= 0 || b.getStrength() <= 0) {
                 break;
             }
             i++;

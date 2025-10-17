@@ -27,6 +27,6 @@ public class WalkingZombie extends Zombie {
 
     @Override
     public String getZombieInfo() {
-        return "Walking Zombie Data:\n" + super.getZombieInfo();
+        return "Walking Zombie Data =\n" + super.getZombieInfo();
     }
 }

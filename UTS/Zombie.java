@@ -1,4 +1,4 @@
-public abstract class Zombie {
+public abstract class Zombie extends Destroyable {
     protected int health;
     protected int level;
 
@@ -8,7 +8,6 @@ public abstract class Zombie {
     }
 
     public abstract void heal();
-    public abstract void destroyed();
 
     public String getZombieInfo() {
         return "Health = " + health + "\nLevel = " + level;
